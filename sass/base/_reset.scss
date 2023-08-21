@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+picture,
+figure,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  &:is(link, hover, focus, active){
+    text-decoration: none;
+  }
+}

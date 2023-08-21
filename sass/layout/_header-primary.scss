@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.header-primary {
+  background-color: $color-primary-800;
+
+  .flex-group {
+    --justify-content: #{$header-justify-content};
+
+    @include mq(small) {
+      --justify-content: center;
+    }
+  }
+}
