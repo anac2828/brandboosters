@@ -5,6 +5,7 @@
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   gap: var(--grid-gap, $grid-gap);
+  align-items: center;
 
   & > * {
     max-width: 100%;

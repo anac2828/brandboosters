@@ -15,6 +15,16 @@
   border-radius: $button-border-radius;
   transition: 0.275s ease;
 
+  &--primary {
+    background-color: $button-primary-background;
+    color: $button-primary-color;
+
+    &:is(:hover, :focus) {
+      background-color: $button-primary-background-hover;
+      color: $button-primary-color-hover;
+    }
+  }
+
   &--accent {
     background-color: $button-accent-background;
     color: $button-accent-color;
@@ -25,13 +35,13 @@
     }
   }
 
-  &--primary {
-    background-color: $button-primary-background;
-    color: $button-primary-color;
+  &--link {
+    background-color: $button-link-background;
+    color: $button-link-color;
 
     &:is(:hover, :focus) {
-      background-color: $button-primary-background-hover;
-      color: $button-primary-color-hover;
+      background-color: $button-link-background-hover;
+      color: $button-link-color-hover;
     }
   }
 }

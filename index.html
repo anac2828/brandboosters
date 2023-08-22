@@ -1,14 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="sass/main.scss">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.scss" />
+
+    <title>BrandBooster</title>
+    <link rel="stylesheet" href="sass/main.scss" />
     <script type="module" src="/main.js"></script>
   </head>
   <body>
-   
+    <header class="header-primary">
+      <div class="container" data-type="wide">
+        <div class="flex-group">
+          <img src="assets/logo.svg" alt="BrandBooster logo" />
+          <nav class="nav">
+            <ul class="nav__list flex-group">
+              <li class="nav__item"><a href="pricing">Pricing</a></li>
+              <li class="nav__item"><a href="about-us">About Us</a></li>
+              <li class="nav__item"><a href="features">Features</a></li>
+              <li class="nav__item"><a href="contact-us">Contact Us</a></li>
+              <li class="nav__item"><a href="careers">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container" data-type="wide">
+        <div class="even-columns">
+          <div class="content">
+            <h1 class="heading-primary">
+              Welcome to <span class=".clr-accent-400">BrandBoosters</span>
+            </h1>
+            <p>
+              Dedicated to boosting your brand’s visibility and success that
+              uses the latest strategies & techniques to help you reach your
+              target audience and achieve your goals.
+            </p>
+            <div class="flex-group">
+              <button class="btn btn--primary">Join now</button>
+              <button class="btn btn--link">Learn more</button>
+            </div>
+          </div>
+
+          <img src="assets/group-on-computer.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about-us" class="bg-primary-700 clr-neutral-100">
+      <div class="container" data-type="narrow">
+        <div class="even-columns">
+          <div class="content grid">
+            <h2 class="heading-secondary inverted margin-block-end-33">
+              About us
+            </h2>
+            <p>
+              BrandBoosters was founded with the mission of helping businesses
+              of all sizes achieve their marketing goals by working closely with
+              each client to develop a customized strategy that delivers
+              results.
+            </p>
+            <button class="btn btn--accent">Learn more about us</button>
+          </div>
+          <div class="img-container grid">
+          <img
+            src="assets/girl-on-phone.webp"
+            alt="Girl on phone back facing towards user"
+          />
+        </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -2,22 +2,19 @@
 
 .nav {
   &__list {
-    --flex-gap: #{$size-9};
+    --flex-column-gap: #{$nav-items-gap};
     list-style: none;
-    text-transform: uppercase;
-    letter-spacing: $letter-spacing-loose;
-    font-family: $ff-serif;
-    font-weight: $font-weight-bold;
+    font-family: $body-font-family;
   }
 
   &__item {
     a {
       text-decoration: none;
-      color: $color-neutral-100;
+      color: $body-text-color-blue-background;
     }
     &:is(:focus, :hover) {
       text-decoration: underline;
-      opacity: 0.7;
+      color: $color-primary-700;
     }
   }
 }

@@ -33,11 +33,3 @@
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
 }
-
-@mixin week-day-border(){
-  content: "";
-    display: inline-flex;
-    width: 1px;
-    height: 26px;
-    background-color: $color-primary-700;
-}

@@ -3,7 +3,7 @@
 
 :root {
   // COLORS
-  @each $color, $shade-map in $active-theme {
+  @each $color, $shade-map in $colors {
     @each $shade, $value in $shade-map {
       --#{$color}-#{$shade}: #{$value};
     }

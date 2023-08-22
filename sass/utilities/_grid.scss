@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.grid{
+    display: grid;
+    grid-gap: var(--grid-gap, $grid-row-gap-1);
+}

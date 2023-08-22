@@ -2,19 +2,19 @@
 
 .heading {
   &-primary {
-    @include heading($font-size-900, $color-accent-400);
+    @include heading($font-size-900);
     letter-spacing: 0;
   }
 
   &-secondary {
-    @include heading($font-size-800, $color-accent-400);
+    @include heading($font-size-800);
+
+    &.inverted{
+      color: $color-neutral-100;
+    }
   }
 
   &-tertiary {
-    @include heading($font-size-700, $color-primary-400);
-  }
-  &-4 {
-    @include heading($font-size-600, $color-primary-700);
-    margin-block-end: $size-2;
+    @include heading($font-size-500);
   }
 }

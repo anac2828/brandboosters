@@ -1,9 +1,23 @@
 @use '../abstracts' as *;
 
 #about-us {
-  .heading-secondary {
-    text-align: center;
+  padding-block-start: $size-1;
+  padding-block-end: 0;
+  --grid-gap: #{$grid-row-gap-2};
+
+  .btn--accent{
+    justify-self: left;
   }
 
-  background-color: $color-primary-200;
+  .img-container{
+    background-color:#CFD9EA;
+    border-top-left-radius: $border-radius-2;
+    border-top-right-radius: $border-radius-2;
+
+    img{
+      height: 51.1rem;
+      justify-self: end;
+    }
+  }
+
 }

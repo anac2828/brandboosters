@@ -2,8 +2,8 @@
 
 .footer {
   --justify-content: center;
-  background-color: $color-primary-800;
-  color: $color-primary-300;
+  background-color: $color-neutral-100;
+  color: $color-neutral-600;
   text-align: center;
 
   p {
@@ -11,7 +11,7 @@
   }
 
   .phone {
-    font-family: $ff-serif;
+    font-family: $body-font-family;
     font-weight: $font-weight-bold;
     color: $color-neutral-100;
     letter-spacing: $letter-spacing-loose;

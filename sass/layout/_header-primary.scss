@@ -1,10 +1,12 @@
 @use '../abstracts/' as *;
 
 .header-primary {
-  background-color: $color-primary-800;
+  background-color: $header-background-color;
+  padding-block: $header-padding-block;
 
   .flex-group {
-    --justify-content: #{$header-justify-content};
+    justify-content: #{$header-justify-content};
+    align-items: center;
 
     @include mq(small) {
       --justify-content: center;
