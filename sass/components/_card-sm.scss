@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.card-sm{
+    font-size: $size-0;
+    color: $color-neutral-800;
+    padding: $card-body-padding;
+    border-radius: $border-radius-1;
+    position: relative;
+
+    .heading-tertiary{
+        margin-block-end: $size-0;
+    }
+
+    p {
+        margin-block-end:$size-6;
+    }
+
+    &[data-type="green"]{
+        background-color: $color-accent-200;
+
+        img {
+            fill: red;
+        }
+    }
+}
