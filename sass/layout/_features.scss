@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+#features{
+    .heading-secondary{
+        text-align: center;
+        margin-block-end: $size-1-5;
+    }
+    --grid-gap: #{$size-1-5};
+}

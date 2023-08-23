@@ -1,25 +1,73 @@
 @use "../abstracts/" as *;
 
-.card-sm{
-    font-size: $size-0;
-    color: $color-neutral-800;
-    padding: $card-body-padding;
-    border-radius: $border-radius-1;
-    position: relative;
+.card-sm {
+  overflow: hidden;
+  font-size: $size-0;
+  color: $color-neutral-800;
+  padding: $card-body-padding;
+  border-radius: $border-radius-1;
+  position: relative;
 
-    .heading-tertiary{
-        margin-block-end: $size-0;
-    }
+  .heading-tertiary {
+    margin-block-end: $size-0;
+  }
 
-    p {
-        margin-block-end:$size-6;
-    }
+  p {
+    margin-block-end: $size-6;
+    max-width: 32ch;
+    z-index: 100;
+  }
 
-    &[data-type="green"]{
-        background-color: $color-accent-200;
+  a {
+    color: var(--link-color);
+  }
 
-        img {
-            fill: red;
-        }
-    }
+  .icon {
+    position: absolute;
+    fill: var(--icon-color);
+    // inset: var(--top) var(--right) var(--bottom) var(--left);
+    top: var(--icon-top);
+    bottom: var(--icon-bottom);
+    right: var(--icon-right);
+    left: var(--icon-left);
+    height: var(--icon-height);
+  }
+
+  &[data-type="green"] {
+    --link-color: #{$color-accent-700};
+    --icon-color: #{$color-accent-400};
+    --icon-height: 60%;
+    --icon-bottom: -25%;
+    --icon-right: -5%;
+    background-color: $color-accent-200;
+  }
+
+  &[data-type="yellow"] {
+    --link-color: #{$color-extra-1-700};
+    --icon-color: #{$color-extra-1-400};
+    --icon-height:100%;
+    --icon-top: 5%;
+    --icon-right: -11%;
+    background-color: $color-extra-1-100;
+    grid-column: 2 / -1;
+  }
+
+  &[data-type="pink"] {
+    --link-color: #{$color-extra-2-700};
+    --icon-color: #{$color-extra-2-400};
+    --icon-height: 118%;
+    --icon-top: -8%;
+    --icon-right: -5%;
+    grid-column: 1 / span 2;
+    background-color: $color-extra-2-100;
+  }
+
+  &[data-type="blue"] {
+    --link-color: #{$color-extra-3-700};
+    --icon-color: #{$color-extra-3-400};
+    --icon-height: 70%;
+    --icon-bottom: -34%;
+    --icon-right: 0;
+    background-color: $color-extra-3-100;
+  }
 }

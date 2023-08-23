@@ -23,7 +23,7 @@
       <div class="container" data-type="wide">
         <div class="flex-group">
           <img src="assets/logo.svg" alt="BrandBooster logo" />
-          <nav class="nav">
+          <nav class="nav" aria-label="primary nav">
             <ul class="nav__list flex-group">
               <li class="nav__item"><a href="pricing">Pricing</a></li>
               <li class="nav__item"><a href="about-us">About Us</a></li>
@@ -53,8 +53,9 @@
               <button class="btn btn--link">Learn more</button>
             </div>
           </div>
-
-          <img src="assets/group-on-computer.webp" alt="" />
+          <div>
+            <img src="assets/group-on-computer.webp" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -75,7 +76,7 @@
             </p>
             <button class="btn btn--accent">Learn more about us</button>
           </div>
-          <div class="img-container grid">
+          <div class="img-container">
             <img
               src="assets/girl-on-phone.webp"
               alt="Girl on phone back facing towards user"
@@ -87,45 +88,73 @@
     <!-- FEATURES -->
     <section id="features">
       <div class="container" data-type="narrow">
-        <h2 class="heading-secondary">Features</h2>
-          <div class="grid-auto-fit">
-            <div class="card-sm" data-type="green">
-              <h3 class="heading-tertiary">Content Creating</h3>
-              <p>
-                High-quality content that resonates with your audience and
-                drives engagement.
-              </p>
-              <a href="#">Try now</a>
-              <img src="assets/book.svg" alt="book icon">
-            </div>
-            <div class="card-sm" data-type="yellow">
-              <h3 class="headin-tertiary">Targeted Advertising</h3>
-              <p>
-                Reach your ideal customers with precision through our targeted
-                advertising campaigns.
-              </p>
-              <a href="#">Try now</a>
-            </div>
-            <div class="card-sm" data-type="pink">
-              <h3 class="heading-tertiary">Social Media</h3>
-              <p>
-                Let us handle your social media presence and engage with your
-                audience on a personal level.
-              </p>
-              <a href="#">Try now</a>
-            </div>
-            <div class="card-sm" data-type="blue">
-              <h3 class="heading-tertiary">Analytics</h3>
-              <p>
-                Stay on top of your campaign’s performance with our detailed
-                analytics and reporting.
-              </p>
-              <a href="#">Try now</a>
-
-            </div>
+        <h2 class="heading-secondary margin-block-end-1-5">Features</h2>
+        <div class="grid-auto-fit">
+          <!-- Green -->
+          <div class="card-sm" data-type="green">
+            <h3 class="heading-tertiary">Content Creating</h3>
+            <p>
+              High-quality content that resonates with your audience and drives
+              engagement.
+            </p>
+            <a href="#">Try now</a>
+            <svg class="icon" viewBox="0 0 60 51">
+              <use xlink:href="assets/sprite.svg#book" />
+            </svg>
           </div>
-  =
+          <!-- Yellow -->
+          <div class="card-sm" data-type="yellow">
+            <h3 class="heading-tertiary">Targeted Advertising</h3>
+            <p>
+              Reach your ideal customers with precision through our targeted
+              advertising campaigns.
+            </p>
+            <a href="#">Try now</a>
+
+            <svg class="icon" viewBox="0 0 71 55">
+              <use xlink:href="assets/sprite.svg#advertising-icon" />
+            </svg>
+          </div>
+          <!-- Pink -->
+          <div class="card-sm" data-type="pink">
+            <h3 class="heading-tertiary">Social Media</h3>
+            <p>
+              Let us handle your social media presence and engage with your
+              audience on a personal level.
+            </p>
+            <a href="#">Try now</a>
+            <svg class="icon" viewBox="0 0 63 63">
+              <use xlink:href="assets/sprite.svg#social-media-icon" />
+            </svg>
+          </div>
+          <div class="card-sm" data-type="blue">
+            <h3 class="heading-tertiary">Analytics</h3>
+            <p>
+              Stay on top of your campaign’s performance with our detailed
+              analytics and reporting.
+            </p>
+            <a href="#">Try now</a>
+            <svg class="icon" viewBox="0 0 57 56">
+              <use xlink:href="assets/sprite.svg#analytics-icon" />
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container" data-type="narrow">
+        <nav aria-label="primary nav" class="nav">
+          <ul class="nav__list flex-group">
+            <li class="nav__item"><a href="pricing">Pricing</a></li>
+            <li class="nav__item"><a href="about-us">About us</a></li>
+            <li class="nav__item"><a href="features">Features</a></li>
+            <li class="nav__item"><a href="contact-us">Contact Us</a></li>
+            <li class="nav__item"><a href="careers">Careers</a></li>
+          </ul>
+        </nav>
+        <p>© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>
+      </div>
+    </footer>
   </body>
 </html>
