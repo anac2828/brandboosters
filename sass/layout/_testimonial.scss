@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.testimonial {
+
+  .content{
+    width: 65rem;
+  }
+
+  & img {
+    border-top-left-radius: $border-radius-2;
+    border-top-right-radius: $border-radius-2;
+    border-bottom-right-radius: $border-radius-2;
+    // width: 24rem;
+  }
+  .stars{
+    margin-block: 3.2rem 1.6rem;
+    fill: $color-extra-1-400;
+  }
+
+  .quote{
+    font-family: $font-family-accent;
+    font-size: $font-size-500;
+    margin-block-end: 3.2rem;
+  }
+
+  &__author{
+    
+    p:first-child{
+      margin: 0;
+    }
+    font-size: $font-size-300;
+  }
+}

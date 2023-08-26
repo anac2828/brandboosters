@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+#benefits{
+    .heading-secondary{
+        margin-block-end: $size-1-5;
+    }
+
+    img{
+        background: #CFD9EA;
+        object-fit: cover;
+    }
+}

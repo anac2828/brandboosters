@@ -2,7 +2,6 @@
 
 // Create utility class for use in HTML
 @each $color, $shade-map in $active-theme {
-  @debug $color;
   @each $shade, $value in $shade-map {
     .clr-#{$color}-#{$shade} {
       color: var(--#{$color}-#{$shade});

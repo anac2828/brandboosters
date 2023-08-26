@@ -18,17 +18,17 @@ $flex-group-gap-small: $size-0;
 $flex-group-gap-large: $size-6;
 $flex-group-gap: $size-5;
 
-$hero-padding-block: clamp(9rem, 15vh, 12rem);
+$hero-padding-block: clamp(8rem, 15vh, 12rem);
 $section-padding-block: clamp(6rem, 12vh, 8rem);
 
 $card-body-padding: clamp(1rem, 3.5vh, 2.4rem);
 $card-body-padding-sm: $size-8;
 
 $container-min-margin-inline: $size-1;
-$container-max-width: 100rem;
+$container-max-width: 101.4rem;
 $container-max-width-narrow: 98rem;
 $container-max-width-extra-narrow: 68rem;
-$container-max-width-wide: 110rem;
+$container-max-width-wide: 112rem;
 
 
 // COLORS
@@ -47,7 +47,7 @@ $letter-spacing-loose: 0.16em;
 
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
-$body-line-height: 1.7;
+$body-line-height: 1.5;
 $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-text-color-blue-background: $color-neutral-800;
@@ -58,9 +58,10 @@ $body-background-color: $color-background-default;
 $heading-font-family: $font-family-accent;
 $heading-color-default: $color-primary-700;
 $heading-font-weight: $font-weight-bold;
-$heading-letter-spacing: 0;
+$heading-letter-spacing: none;
 $heading-line-height: 1;
 $heading-text-transform: none;
+$heading-text-align: left;
 
 // links
 $link-color: $color-text-interactive-default;
@@ -78,7 +79,7 @@ $nav-items-gap: $flex-group-gap-large;
 
 
 // buttons
-$button-font-family: inherit;
+$button-font-family: $body-font-family;
 $button-font-size: $body-font-size;
 $button-text-transform: none;
 $button-font-weight-bold: $font-weight-default;
@@ -108,7 +109,7 @@ $button-link-background-hover:$color-neutral-200;
 $button-link-color-hover: $button-link-color;
 
 // cards
-$card-flow-spacing: $size-2;
+$card-flow-spacing: $size-5;
 $card-body-padding: $size-1-5;
 $card-background-default: $color-primary-100;
 $card-color-default: $color-primary-700;
@@ -116,4 +117,6 @@ $card-font-family: $font-family-accent;
 $card-line-height: 2.5;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-400;
+$card-heading-font-weight: $body-font-weight;
 $card-border-radius: 1.2rem;
+$card-header-text-align: center;

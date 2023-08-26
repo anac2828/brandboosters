@@ -32,4 +32,5 @@
   letter-spacing: $heading-letter-spacing;
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
+  @content
 }

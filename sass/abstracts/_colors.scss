@@ -8,7 +8,6 @@ $_clr-navy-blue-200: rgb(209, 217, 230);
 $_clr-navy-blue-400: hsl(218 48% 38%);
 $_clr-navy-blue-700: hsl(218 36% 23%);
 
-
 $_clr-teal-200: hsl(168 98% 81%);
 $_clr-teal-300: hsl(168 96% 51%);
 $_clr-teal-400: hsl(168 100% 41%);
@@ -22,7 +21,7 @@ $_clr-pink-100: hsl(340 81% 84%);
 $_clr-pink-400: hsl(340 68% 63%);
 $_clr-pink-700: hsl(340 76% 27%);
 
-$_clr-blue-100: rgb(159, 232, 254);
+$_clr-blue-100: hsl(194, 98%, 81%);
 $_clr-blue-400: hsl(194 64% 53%);
 $_clr-blue-700: hsl(195 69% 27%);
 
@@ -50,7 +49,7 @@ $default: (
     '400': $_clr-yellow-400,
     '700': $_clr-yellow-700,
   ),
-  'extra-2':(
+  'extra-2': (
     '100': $_clr-pink-100,
     '400': $_clr-pink-400,
     '700': $_clr-pink-700,
@@ -85,10 +84,10 @@ $sleek: (
     '100': $_clr-yellow-100,
     '400': $_clr-yellow-400,
     '700': $_clr-yellow-700,
-  )
+  ),
 );
 
-//color tokens
+// color tokens
 $color-neutral-100: var(--neutral-100);
 $color-neutral-200: var(--neutral-200);
 $color-neutral-600: var(--neutral-600);
@@ -103,7 +102,6 @@ $color-accent-200: var(--accent-200);
 $color-accent-300: var(--accent-300);
 $color-accent-400: var(--accent-400);
 $color-accent-700: var(--accent-700);
-
 
 $color-extra-1-100: var(--extra-1-100);
 $color-extra-1-400: var(--extra-1-400);

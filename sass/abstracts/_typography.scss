@@ -23,26 +23,15 @@ $font-sizes: (
     '800': 4.2rem,
     '700': 3.6rem,
     '600': 3.2rem,
-    
-    // ALL SCREENS
-    '500': 2.4rem,
-    '400': 1.8rem,
-    '300': 1.6rem,
-    '200': 1.4rem,
     ),
     'small': (
       '900': 4.2rem,
       '800': 3.6rem,
       '700': 3.6rem,
       '600': 2.8rem,
-      
-      // ALL SCREENS
-      '500': 2.4rem,
-      '400': 1.8rem,
-      '300': 1.6rem,
-      '200': 1.4rem,
     ),
 );
+
 
 // Font Family
 
@@ -60,7 +49,9 @@ $font-size-900: var(--fs-900);
 
 // font-weights
 $_fw-400: 400;
+$_fw-600: 600;
 $_fw-700: 700;
 
 $font-weight-default: $_fw-400;
+$font-weight-semibold: $_fw-600;
 $font-weight-bold: $_fw-700;

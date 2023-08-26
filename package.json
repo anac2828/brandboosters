@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "sass": "^1.65.1",
     "vite": "^4.4.5",
     "vite-plugin-purgecss": "^0.2.12"
+  },
+  "dependencies": {
+    "sass": "^1.66.1"
   }
 }

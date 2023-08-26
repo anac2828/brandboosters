@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+table {
+    font-family: $font-family-accent;
+  border-collapse: collapse;
+  width: 100%;
+
+  thead{
+    td{
+        padding-block-end: 6rem;
+    }
+  }
+
+  tbody {
+    tr:not(:last-child) {
+      border-bottom: 1px solid $color-neutral-200;
+    }
+    
+    td{
+        padding-block: 2.1rem;
+      }
+
+      .checkmark {
+        text-align: center;
+      }
+    
+      .checkmark::before {
+        $stroke: map.get($default, "accent", "400");
+        content: url("data:image/svg+xml,%3Csvg width='44' height='45' viewBox='0 0 44 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.2007 16.7975L32.5786 15.2324L19.1755 29.1232L12.5907 22.7697L11.0256 24.3918L19.2324 32.3105L34.2007 16.7975Z' fill='#{$stroke}' stroke='#{$stroke}' stroke-width='2'/%3E%3Ccircle cx='22.0001' cy='22.5428' r='20.2931' stroke='#{$stroke}' stroke-width='3'/%3E%3C/svg%3E%0A");
+      }
+  }
+}

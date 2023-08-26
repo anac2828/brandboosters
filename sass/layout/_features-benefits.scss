@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.features-benefits {
+  & .even-columns {
+    gap: 9rem;
+  }
+
+  p span {
+    font-weight: $font-weight-semibold;
+  }
+
+  &__list {
+    max-width: 500rem;
+    font-family: $font-family-accent;
+    font-size: $font-size-600;
+  }
+
+  &__item:not(:last-child) {
+    border-bottom: 1px solid $color-primary-100;
+    padding-block-end: 2.8rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    .icon {
+      height: 42px;
+      width: 42px;
+      fill: currentColor;
+      stroke: currentColor;
+    }
+
+    // Benefits active item
+    &[data-active="true"] {
+      font-weight: $font-weight-semibold;
+
+      .icon {
+        fill: $color-accent-300;
+        stroke: none;
+      }
+    }
+    //
+  }
+}

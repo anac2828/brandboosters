@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+#services {
+
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        grid-gap: $size-6;
+    }
+  .services__item {
+
+    & > *:not(:last-child){
+        margin-block-end: 1rem;
+    }
+
+    // Icon colors
+     & [data-type="green"] {
+      fill: $color-accent-400;
+    }
+     & [data-type="pink"] {
+      fill: $color-extra-2-400;
+    }
+     & [data-type="yellow"] {
+      fill: $color-extra-1-400;
+    }
+     & [data-type="blue"] {
+      fill: $color-extra-3-400;
+    }
+  }
+}
