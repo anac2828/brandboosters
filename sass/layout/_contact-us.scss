@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
-#contact-form {
-  h2,
-  p {
-    text-align: center;
+#contact-us{
+  text-align: center;
+  p{
+    margin-block-start: 1.6rem;
+    margin-block-end: 4.8rem;
   }
 }

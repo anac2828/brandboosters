@@ -5,9 +5,9 @@
   background-color: $color-neutral-100;
   color: $color-neutral-600;
   text-align: center;
-  padding-block: $size-1-5;
+  padding-block: 8rem;
 
-  .nav{
+  .nav--footer{
     --padding: #{$size-1-5};
     margin-block-end: var(--padding);
     padding-block-end: var(--padding);

@@ -19,8 +19,11 @@
     <header class="header-primary">
       <div class="container" data-type="wide">
         <div class="flex-group">
-          <img src="/assets/logo.svg" alt="BrandBooster logo" />
-          <nav class="nav" aria-label="primary nav">
+          <div class="logo">
+            <img src="/assets/logo.svg" alt="BrandBooster logo" />
+          </div>
+          <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
+          <nav class="nav" aria-label="primary nav" id="primary-nav">
             <ul class="nav__list flex-group">
               <li class="nav__item"><a href="pricing">Pricing</a></li>
               <li class="nav__item"><a href="about-us">About Us</a></li>
@@ -50,7 +53,7 @@
               <a href="/pages/how-we-work.html" class="btn btn--link">Learn more</a>
             </div>
           </div>
-          <div>
+          <div class="image-container">
             <img src="/assets/group-on-computer.webp" alt="" />
           </div>
         </div>
@@ -68,11 +71,11 @@
               sizes achieve their marketing goals by working closely with each client to
               develop a customized strategy that delivers results.
             </p>
-            <a href="pages/how-we-work.html" class="btn btn--accent">Learn more about us</a>
+            <a href="/pages/how-we-work.html" class="btn btn--accent">Learn more about us</a>
           </div>
           <div class="img-container">
             <img
-              src="assets/girl-on-phone.webp"
+              src="/assets/girl-on-phone.webp"
               alt="Girl on phone back facing towards user"
             />
           </div>
@@ -93,7 +96,7 @@
             </p>
             <a href="/pages/how-we-work.html#features-benefits">Try now</a>
             <svg class="icon" viewBox="0 0 60 51">
-              <use xlink:href="assets/sprite.svg#book" />
+              <use xlink:href="/assets/sprite.svg#book" />
             </svg>
           </div>
           <!-- Yellow -->
@@ -106,7 +109,7 @@
             <a href="/pages/how-we-work.html#features-benefits">Try now</a>
 
             <svg class="icon" viewBox="0 0 71 55">
-              <use xlink:href="assets/sprite.svg#advertising-icon" />
+              <use xlink:href="/assets/sprite.svg#advertising-icon" />
             </svg>
           </div>
           <!-- Pink -->
@@ -118,7 +121,7 @@
             </p>
             <a href="/pages/how-we-work.html#features-benefits">Try now</a>
             <svg class="icon" viewBox="0 0 63 63">
-              <use xlink:href="assets/sprite.svg#social-media-icon" />
+              <use xlink:href="/assets/sprite.svg#social-media-icon" />
             </svg>
           </div>
           <div class="card-sm" data-type="blue">
@@ -129,7 +132,7 @@
             </p>
             <a href="/pages/how-we-work.html#features-benefits">Try now</a>
             <svg class="icon" viewBox="0 0 57 56">
-              <use xlink:href="assets/sprite.svg#analytics-icon" />
+              <use xlink:href="/assets/sprite.svg#analytics-icon" />
             </svg>
           </div>
         </div>
@@ -138,7 +141,7 @@
 
     <footer class="footer">
       <div class="container" data-type="narrow">
-        <nav aria-label="primary nav" class="nav">
+        <nav aria-label="primary nav" class="nav--footer">
           <ul class="nav__list flex-group">
             <li class="nav__item"><a href="pricing">Pricing</a></li>
             <li class="nav__item"><a href="about-us">About us</a></li>
