@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [htmlPurge()],
   build: { outDir: 'dist' },
   // publicDir: 'public',
-  base: './',
+  base: '/brandboosters',
 });
