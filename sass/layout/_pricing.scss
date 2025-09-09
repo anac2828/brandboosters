@@ -1,6 +1,7 @@
 #pricing{
 
-    .even-columns{
-        align-items: stretch;
+    .grid-auto-fit{
+        // align-items: stretch;
+        grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     }
 }

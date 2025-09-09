@@ -19,14 +19,23 @@
     <header class="header-primary">
       <div class="container" data-type="wide">
         <div class="flex-group">
-          <img src="/assets/logo.svg" alt="BrandBooster logo" />
-          <nav class="nav" aria-label="primary nav">
+          <a href="/">
+          <div class="logo">
+            <img src="/assets/logo.svg" alt="BrandBooster logo" />
+          </div>
+        </a>
+          <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <span class="top"></span>
+            <span class="center"></span>
+            <span class="bottom"></span>
+          </button>
+          <nav class="nav" aria-label="primary nav" id="primary-nav">
             <ul class="nav__list flex-group">
-              <li class="nav__item"><a href="pricing">Pricing</a></li>
-              <li class="nav__item"><a href="about-us">About Us</a></li>
-              <li class="nav__item"><a href="features">Features</a></li>
-              <li class="nav__item"><a href="contact-us">Contact Us</a></li>
-              <li class="nav__item"><a href="careers">Careers</a></li>
+              <li class="nav__item"><a href="/pages/pricing.html">Pricing</a></li>
+              <li class="nav__item"><a href="/#about-us">About Us</a></li>
+              <li class="nav__item"><a href="/#features-cards">Features</a></li>
+              <li class="nav__item"><a href="#">Contact Us</a></li>
+              <li class="nav__item"><a href="#">Careers</a></li>
             </ul>
           </nav>
         </div>
@@ -76,25 +85,25 @@
                 
                 <li class="features-benefits__item" data-active="true">
                     <span>Content Creation</span>
-                    <svg class="icon">
+                    <svg class="icon" height="42" width="42" viewBox="0 0 42 43">
                         <use xlink:href="/assets/sprite.svg#circle-right-arrow-full"/>
                     </svg>
                 </li>
                 <li class="features-benefits__item">
                     <span>Targeted Advertising</span>
-                    <svg class="icon">
+                    <svg class="icon" height="42" width="42" viewBox="0 0 42 43">
                         <use xlink:href="/assets/sprite.svg#cirlce-right-arrow-stroke"/>
                     </svg>
                 </li>
                 <li class="features-benefits__item">
                     <span>Social Media</span>
-                    <svg class="icon">
+                    <svg class="icon" height="42" width="42" viewBox="0 0 42 43">
                         <use xlink:href="/assets/sprite.svg#cirlce-right-arrow-stroke"/>
                     </svg>
                 </li>
                 <li class="features-benefits__item">
                     <span>Analytics</span>
-                    <svg class="icon">
+                    <svg class="icon" height="42" width="42" viewBox="0 0 42 43">
                         <use xlink:href="/assets/sprite.svg#cirlce-right-arrow-stroke"/>
                     </svg>
                 </li>
@@ -174,23 +183,27 @@
           <p>Marketing Director, GreenLeaf Publications</p>
          </div>
       </div>
-      <img src="/assets/girl-smiling.webp" alt="girl smiling">
+      <div>
+        <img src="/assets/girl-smiling.webp" alt="girl smiling">
+      </div>
     </div>
   </div>
 </section>
-    <footer class="footer">
-      <div class="container" data-type="narrow">
-        <nav aria-label="primary nav" class="nav">
-          <ul class="nav__list flex-group">
-            <li class="nav__item"><a href="pricing">Pricing</a></li>
-            <li class="nav__item"><a href="about-us">About us</a></li>
-            <li class="nav__item"><a href="features">Features</a></li>
-            <li class="nav__item"><a href="contact-us">Contact Us</a></li>
-            <li class="nav__item"><a href="careers">Careers</a></li>
-          </ul>
-        </nav>
-        <p>© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>
-      </div>
-    </footer>
+
+<footer class="footer">
+  <div class="container" data-type="narrow">
+    <nav aria-label="primary nav" class="nav--footer">
+      <ul class="nav__list flex-group">
+        <li class="nav__item"><a href="/pages/pricing.html">Pricing</a></li>
+          <li class="nav__item"><a href="/pages/how-we-work.html">About Us</a></li>
+          <li class="nav__item"><a href="/#features-cards">Features</a></li>
+          <li class="nav__item"><a href="#">Contact Us</a></li>
+          <li class="nav__item"><a href="#">Careers</a></li>
+      </ul>
+    </nav>
+    <p>© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>
+  </div>
+</footer>
+
   </body>
 </html>

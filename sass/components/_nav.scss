@@ -18,24 +18,24 @@
     }
   }
 
+  // MOBILE STYLES
   @include mq(medium) {
     --flex-row-gap: 3.2rem;
-    color: red;
     position: absolute;
     top: 100%;
     left: -100%;
     opacity: 0;
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
 
     width: 100%;
-    
+
     &__list {
       background-color: $header-background-color;
       flex-direction: column;
       padding-block-end: var(--flex-row-gap);
     }
 
-    &[data-visible="true"]{
+    &[data-visible="true"] {
       display: block;
       left: 0;
       opacity: 1;
@@ -43,43 +43,71 @@
   }
 }
 
-.mobile-nav-toggle{
+.mobile-nav-toggle {
   position: relative;
   --line-width: 3.5rem;
   --line-height: 4px;
   --line-color: #{$color-primary-400};
   --line-distance: 9px;
   --line-border-radius: 100vh;
-  display: grid;
-  gap: var(--line-distance);
-  border-radius: var(--line-border-radius);
   border: 0;
   width: var(--line-width);
-  height: var(--line-height);
-  background-color: var(--line-color);
-  
-  &::before, &::after{
+  background-color: transparent;
+
+  //will not display when not in mobile size
+  display: none;
+
+  span {
     position: absolute;
-    content: '';
     display: block;
     width: var(--line-width);
     height: var(--line-height);
     background-color: var(--line-color);
     border-radius: var(--line-border-radius);
+    transform-origin: center;
+    transition: top .2s ease-in .2s, rotate .2s ease-in, opacity .2s .2s;
+    // opacity: 1;
   }
 
-  &::before{
+  // space between lines
+  .top {
     top: calc(var(--line-distance) * -1);
   }
-  
-  &::after{
+  .bottom {
     top: var(--line-distance);
   }
+  //
 
-  display: none;
+  // animation when button is clicked
+  &[aria-expanded="true"] {
+  
+    span {
+      transition: top .2s ease-in, rotate .2s ease-in .4s, opacity .2s .2s;
+    }
 
-  @include mq(medium){
-  display: block;
+    .top,
+    .bottom {
+      top: 100%;
+    }
+
+    .top {
+      rotate: -45deg;
+    }
+
+    
+    .bottom {
+      rotate: 45deg;
+    }
+   
+    .center {
+      opacity: 0;
+    }
+  }
+
+  //
+
+  // SHOW NAV WHEN IN MOBILE
+  @include mq(medium) {
+    display: block;
   }
 }
-

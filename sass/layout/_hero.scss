@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .hero {
-    padding-block: $size-10;
+    padding-block: $hero-padding-block;
 
   .content {
     display: grid;
@@ -25,7 +25,6 @@
 
   @include mq(medium) {
     --justify-content: center;
-    text-align: center;
     justify-items: center;
   }
 }

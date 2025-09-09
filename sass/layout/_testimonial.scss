@@ -2,8 +2,8 @@
 
 .testimonial {
 
-  .content{
-    width: 65rem;
+  .even-columns{
+    grid-auto-columns: 2fr 1fr;
   }
 
   & img {

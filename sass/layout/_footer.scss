@@ -12,6 +12,11 @@
     margin-block-end: var(--padding);
     padding-block-end: var(--padding);
     border-bottom: 1px solid $color-neutral-200;
+
+    .nav__list{
+      background-color: $color-neutral-100;
+      flex-direction: row;
+    }
   }
 
   p {

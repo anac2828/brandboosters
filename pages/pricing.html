@@ -21,14 +21,31 @@
     <header class="header-primary">
       <div class="container" data-type="wide">
         <div class="flex-group">
-          <img src="/assets/logo.svg" alt="BrandBooster logo" />
-          <nav class="nav" aria-label="primary nav">
+          <a href="/">
+            <div class="logo">
+              <img src="/assets/logo.svg" alt="BrandBooster logo" />
+            </div>
+          </a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+          >
+            <span class="top"></span>
+            <span class="center"></span>
+            <span class="bottom"></span>
+          </button>
+          <nav class="nav" aria-label="primary nav" id="primary-nav">
             <ul class="nav__list flex-group">
-              <li class="nav__item"><a href="pricing">Pricing</a></li>
-              <li class="nav__item"><a href="about-us">About Us</a></li>
-              <li class="nav__item"><a href="features">Features</a></li>
-              <li class="nav__item"><a href="contact-us">Contact Us</a></li>
-              <li class="nav__item"><a href="careers">Careers</a></li>
+              <li class="nav__item">
+                <a href="/pages/pricing.html">Pricing</a>
+              </li>
+              <li class="nav__item">
+                <a href="/pages/how-we-work.html">About Us</a>
+              </li>
+              <li class="nav__item"><a href="/#features-cards">Features</a></li>
+              <li class="nav__item"><a href="#">Contact Us</a></li>
+              <li class="nav__item"><a href="#">Careers</a></li>
             </ul>
           </nav>
         </div>
@@ -41,7 +58,7 @@
         <h1 class="heading-primary text-align-center margin-block-end-6">
           Flexible Plans
         </h1>
-        <div class="even-columns">
+        <div class="grid-auto-fit">
           <!-- Basic -->
           <div class="card">
             <header class="card__header">
@@ -154,21 +171,26 @@
     <section id="contact-us" class="bg-accent-200">
       <div class="container" data-type="extra-narrow">
         <h2 class="heading-secondary clr-primary-700">Still have questions?</h2>
-        <p class="clr-neutral-800">If you have any questions about our services, plans, or features, we
-        are here to help. You can contact us via email or chat, and we will get
-        back to you as soon as possible.</p>
+        <p class="clr-neutral-800">
+          If you have any questions about our services, plans, or features, we
+          are here to help. You can contact us via email or chat, and we will
+          get back to you as soon as possible.
+        </p>
         <a class="btn btn--primary" href="#">Contact us</a>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container" data-type="narrow">
-        <nav aria-label="primary nav" class="nav">
+        <nav aria-label="primary nav" class="nav--footer">
           <ul class="nav__list flex-group">
-            <li class="nav__item"><a href="pricing">Pricing</a></li>
-            <li class="nav__item"><a href="about-us">About us</a></li>
-            <li class="nav__item"><a href="features">Features</a></li>
-            <li class="nav__item"><a href="contact-us">Contact Us</a></li>
-            <li class="nav__item"><a href="careers">Careers</a></li>
+            <li class="nav__item"><a href="/pages/pricing.html">Pricing</a></li>
+            <li class="nav__item">
+              <a href="/pages/how-we-work.html">About Us</a>
+            </li>
+            <li class="nav__item"><a href="/#features-cards">Features</a></li>
+            <li class="nav__item"><a href="#">Contact Us</a></li>
+            <li class="nav__item"><a href="#">Careers</a></li>
           </ul>
         </nav>
         <p>© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>

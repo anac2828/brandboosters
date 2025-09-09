@@ -5,12 +5,21 @@
   padding-block-end: 0;
   --grid-gap: #{$grid-gap-large};
 
+  @include mq(medium){
+    padding-block-start: $size-7;
+  }
+
   .btn--accent {
     justify-self: left;
   }
 
+
   .container .grid{
     --grid-gap: #{$size-5};
+
+    @include mq(medium){
+      --grid-gap: #{$size-2};
+    }
   }
 
   .img-container {

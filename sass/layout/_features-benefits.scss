@@ -23,12 +23,12 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    gap: $size-2;
+    align-items: center;
 
     .icon {
-      height: 42px;
-      width: 42px;
       fill: currentColor;
-      stroke: currentColor;
+      flex-shrink: 0;
     }
 
     // Benefits active item

@@ -18,8 +18,8 @@ $flex-group-gap-small: $size-0;
 $flex-group-gap-large: $size-6;
 $flex-group-gap: $size-5;
 
-$hero-padding-block: clamp(8rem, 15vh, 12rem);
-$section-padding-block: clamp(6rem, 12vh, 8rem);
+$hero-padding-block: clamp(7rem, 10vh, 12rem);
+$section-padding-block: clamp(6rem, 11vh, 8rem);
 
 $card-body-padding: clamp(1rem, 3.5vh, 2.4rem);
 $card-body-padding-sm: $size-8;
@@ -71,7 +71,7 @@ $link-color-hover: $color-text-interactive-hover;
 
 // header
 $header-justify-content: space-between;
-$header-padding-block: 4rem;
+$header-padding-block: $size-1-5;
 $header-background-color: $color-primary-100;
 
 // nav

@@ -4,7 +4,7 @@
   &-primary {
     @include heading($font-size-900);
     letter-spacing: 0;
-    font-size: clamp(4.2rem, 6vw, 5.6rem);
+    font-size: clamp(3.75rem, 6vw, 5.6rem);
   }
 
   &-secondary {
