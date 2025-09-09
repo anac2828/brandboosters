@@ -4,6 +4,5 @@ import htmlPurge from 'vite-plugin-purgecss';
 export default defineConfig({
   plugins: [htmlPurge()],
   build: { outDir: 'dist' },
-  // publicDir: 'public',
   base: '/brandboosters',
 });
