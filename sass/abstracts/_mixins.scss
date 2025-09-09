@@ -7,7 +7,7 @@
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
-    $breakpoint: map-get($breakpoints, $size);
+    $breakpoint: map.get($breakpoints, $size);
     @media screen and (max-width: $breakpoint) {
       @content;
     }
@@ -32,5 +32,5 @@
   letter-spacing: $heading-letter-spacing;
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
-  @content
+  @content;
 }
