@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/sass/main.scss" />
     <title>BrandBooster | Flexible Plans</title>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
     <header class="header-primary">
@@ -38,12 +38,14 @@
           <nav class="nav" aria-label="primary nav" id="primary-nav">
             <ul class="nav__list flex-group">
               <li class="nav__item">
-                <a href="pricing.html">Pricing</a>
+                <a href="#">Pricing</a>
               </li>
               <li class="nav__item">
                 <a href="how-we-work.html">About Us</a>
               </li>
-              <li class="nav__item"><a href="#features-cards">Features</a></li>
+              <li class="nav__item">
+                <a href="%BASE_URL%#features-cards">Features</a>
+              </li>
               <li class="nav__item"><a href="#">Contact Us</a></li>
               <li class="nav__item"><a href="#">Careers</a></li>
             </ul>
@@ -184,13 +186,15 @@
       <div class="container" data-type="narrow">
         <nav aria-label="primary nav" class="nav--footer">
           <ul class="nav__list flex-group">
-            <li class="nav__item"><a href="/pages/pricing.html">Pricing</a></li>
+            <li class="nav__item"><a href="#">Pricing</a></li>
             <li class="nav__item">
-              <a href="/pages/how-we-work.html">About Us</a>
+              <a href="how-we-work.html">About Us</a>
             </li>
-            <li class="nav__item"><a href="/#features-cards">Features</a></li>
-            <li class="nav__item"><a href="#">Contact Us</a></li>
-            <li class="nav__item"><a href="#">Careers</a></li>
+            <li class="nav__item">
+              <a href="%BASE_URL%#features-cards">Features</a>
+            </li>
+            <li class="nav__item"><a href="">Contact Us</a></li>
+            <li class="nav__item"><a href="">Careers</a></li>
           </ul>
         </nav>
         <p>© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>

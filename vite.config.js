@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import htmlPurge from 'vite-plugin-purgecss';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [htmlPurge()],
   build: {
     outDir: 'dist',
@@ -14,5 +14,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/brandboosters',
-});
+  base: command === 'serve' ? '/' : '/brandboosters',
+}));
